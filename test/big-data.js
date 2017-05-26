@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var test = require('tape')
-var b64 = require('../')
+var b64 = require('base64-js/')
 
 test('convert big data to base64', function (t) {
   var b64str, arr, i, length
@@ -22,3 +23,5 @@ function equal (a, b) {
   }
   return true
 }
+
+return module.exports;});

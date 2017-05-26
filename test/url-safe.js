@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var test = require('tape')
-var b64 = require('../')
+var b64 = require('base64-js/')
 
 test('decode url-safe style base64 strings', function (t) {
   var expected = [0xff, 0xff, 0xbe, 0xff, 0xef, 0xbf, 0xfb, 0xef, 0xff]
@@ -16,3 +17,5 @@ test('decode url-safe style base64 strings', function (t) {
 
   t.end()
 })
+
+return module.exports;});

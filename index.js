@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict'
 
 exports.byteLength = byteLength
@@ -112,3 +113,5 @@ function fromByteArray (uint8) {
 
   return parts.join('')
 }
+
+return module.exports;});

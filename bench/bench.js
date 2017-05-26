@@ -1,4 +1,5 @@
-var base64 = require('../')
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var base64 = require('base64-js/')
 var benchmark = require('benchmark')
 
 var suite = new benchmark.Suite()
@@ -20,3 +21,5 @@ suite
     console.log(String(event.target))
   })
   .run({ async: true })
+
+return module.exports;});
