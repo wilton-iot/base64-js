@@ -1,5 +1,5 @@
 define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
-var test = require('tape')
+var test = require('tape-compat')
 var b64 = require('base64-js/')
 var checks = [
   'a',
