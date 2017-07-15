@@ -33,5 +33,11 @@
     "standard": "*",
     "tape": "4.x",
     "uglify-js": "^2.6.2"
+  },
+  "wilton": {
+    "excludes": [
+      "bench",
+      "test"
+    ]
   }
 }
