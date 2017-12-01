@@ -1,6 +1,6 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 var test = require('tape-compat')
-var b64 = require('base64-js/')
+var b64 = require('base64-js')
 var checks = [
   'a',
   'aa',
@@ -48,4 +48,4 @@ function map (arr, callback) {
   return res
 }
 
-return module.exports;});
+require = requireOrig;});

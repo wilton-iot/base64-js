@@ -1,7 +1,7 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 var random = require('crypto').pseudoRandomBytes
 
-var b64 = require('base64-js/')
+var b64 = require('base64-js')
 var data = random(1e6).toString('base64')
 var start = Date.now()
 var raw = b64.toByteArray(data)
@@ -14,4 +14,4 @@ console.log(
   middle - start, data.length / (middle - start),
   end - middle, data.length / (end - middle))
 
-return module.exports;});
+require = requireOrig;});

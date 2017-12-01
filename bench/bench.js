@@ -1,5 +1,5 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
-var base64 = require('base64-js/')
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
+var base64 = require('base64-js')
 var benchmark = require('benchmark')
 
 var suite = new benchmark.Suite()
@@ -22,4 +22,4 @@ suite
   })
   .run({ async: true })
 
-return module.exports;});
+require = requireOrig;});
