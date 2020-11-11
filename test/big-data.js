@@ -1,5 +1,5 @@
 define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
-var test = require('tape')
+var test = require('tape-compat')
 var b64 = require('base64-js')
 
 test('convert big data to base64', function (t) {

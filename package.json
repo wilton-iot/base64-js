@@ -39,7 +39,8 @@
   "wilton": {
     "excludes": [
       "bench",
-      "test"
+      "test",
+      "test.js"
     ]
   }
 }
